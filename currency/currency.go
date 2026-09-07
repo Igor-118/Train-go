@@ -89,37 +89,3 @@ func ParseCurrencyName(name string) (string, error) {
 	}
 	return currency, nil
 }
-
-// func ParseCoord(s string) (Position, error) {
-// 	if len(s) > 3 {
-// 		return Position{}, fmt.Errorf("Шляпу мне не пиши тут, давай нормальное значение не длиннее 3 символов")
-// 	}
-// 	pos := Position{}
-// 	var x rune
-// 	var y string
-// 	massiv := []rune{}
-// 	for _, sign := range s {
-// 		massiv = append(massiv, sign)
-// 	}
-// 	x = rune(massiv[0])
-// 	Lowx := unicode.ToLower(x)
-// 	LowX := rune(Lowx)
-// 	if rune(LowX) < 'a' || rune(LowX) > 'j' {
-// 		return Position{}, fmt.Errorf("Слыш чувырло, букву нормальную напиши")
-// 	}
-// 	X := int(LowX - 'a')
-// 	y = string(massiv[1:])
-// 	Y, err := strconv.Atoi(y)
-// 	if err != nil {
-// 		return Position{}, fmt.Errorf("ЛЭЭЭ проблема при конвертации ээ")
-// 	}
-// 	Y = Y - 1
-// 	if Y > 9 {
-// 		return Position{}, fmt.Errorf("ЛЭЭЭ больше 10 нельзя")
-// 	}
-// 	if Y < 0 {
-// 		return Position{}, fmt.Errorf("ЛЭЭЭ меньше 0 нельзя")
-// 	}
-// 	pos = Position{X, Y}
-// 	return pos, nil
-// }
