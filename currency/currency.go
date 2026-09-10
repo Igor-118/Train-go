@@ -91,3 +91,4 @@ func ParseCurrencyName(name string) (string, error) {
 }
 
 // что то на дотерском
+//чисто так рандомный коммент для гита
